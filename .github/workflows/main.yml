@@ -7,17 +7,21 @@ jobs:
       - name: Code Checkout
         uses: actions/checkout@v4
       
-      - name: Maven test
-        run: mvn test
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
         
+      - name: Maven Compile
+        run: mvn compile
+      
+      - name: Maven Test
+        run: mvn test
+      
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
       
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '11'
 
        # Setup sonar-scanner
       - name: Setup SonarQube
@@ -35,4 +39,4 @@ jobs:
            -Dsonar.junit.reportsPath=target/surefire-reports/ \
            -Dsonar.jacoco.reportsPath=target/jacoco.exec \
            -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml \
-           -Dsonar.java.binaries=target/test-classes
+           -Dsonar.java.binaries=target/classes
