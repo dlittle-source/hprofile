@@ -7,5 +7,6 @@ In this project, I developed a **fully automated CI/CD pipeline** using **GitHub
 
 **Deployment Steps**
 
-**1. GitHub Secrets:**
-Configured **GitHub Secrets** to securely store sensitive credentials such as **AWS access keys**, **RDS endpoint**, and **SonarCloud token**, preventing hardcoding and enhancing repository security.
+1. **GitHub Secrets:**
+   - Configured **GitHub Secrets** to securely store sensitive credentials such as **AWS access keys**, **RDS endpoint**, and SonarCloud token**, preventing hardcoding and enhancing 
+     repository security.
