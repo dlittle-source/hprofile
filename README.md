@@ -37,7 +37,7 @@ In this project, I developed a **fully automated CI/CD pipeline** using **GitHub
    - Implemented **Amazon RDS** to manage a **relational database** backend, ensuring data integrity, security, and automated maintenance for end-user data.
 
 10. **Maven:**
-   - Maven served as the primary build tool, handling the compilation, dependency management, and packaging of the Java application.
+    - Maven served as the primary build tool, handling the compilation, dependency management, and packaging of the Java application.
 
-11. **AWS ELB**
+11. **AWS ELB:**
     - To efficiently manage network traffic, I deployed AWS Elastic Load Balancer to evenly distribute incoming requests across multiple targets spanning multiple Availability Zones.
