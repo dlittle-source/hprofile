@@ -37,7 +37,7 @@ In this project, I developed a **fully automated CI/CD pipeline** using **GitHub
    - Used **AWS ECS with Fargate** to run and manage the containerized application in a **serverless** environment, simplifying infrastructure management and scaling.
 
 10. **AWS RDS:**
-   - Implemented **Amazon RDS** to manage a **relational database** backend, ensuring data integrity, security, and automated maintenance for end-user data.
+    - Implemented **Amazon RDS** to manage a **relational database** backend, ensuring data integrity, security, and automated maintenance for end-user data.
 
 11. **Maven:**
     - Maven served as the primary build tool, handling the compilation, dependency management, and packaging of the Java application.
