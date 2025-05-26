@@ -1,3 +1,5 @@
+![Alt text](image.png)
+
 **Project: CI/CD Workflow with GitHub Actions**
 
 **Overview:**
