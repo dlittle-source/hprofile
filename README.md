@@ -11,33 +11,36 @@ In this project, I developed a **fully automated CI/CD pipeline** using **GitHub
    - Configured **GitHub Secrets** to securely store sensitive credentials such as **AWS access keys**, **RDS endpoint**, and **SonarCloud token**, preventing hardcoding and enhancing 
      repository security.
 
-2. **SonarCloud Integration:**
+2. **Private SSH Key**
+   - Configured the repository to use a private SSH key for secure access.
+
+3. **SonarCloud Integration:**
    - Integrated **SonarCloud** for continuous static code analysis and configured a custom Quality Gate to enable early detection of bugs, vulnerabilities, and code smells 
      throughout the CI/CD pipeline.
 
-3. **Virtual Private Cloud (VPC):**
+4. **Virtual Private Cloud (VPC):**
    - Provisioned a **VPC** with **3 public subnets** distributed across **two Availability Zones** to ensure high availability, scalability, and fault tolerance.
 
-4. **Security Groups:**
+5. **Security Groups:**
    - Created **Security Groups** to define inbound and outbound traffic rules, functioning as firewalls to protect EC2 instances and other AWS resources.
 
-5. **Availability Zones:**
+6. **Availability Zones:**
    - Deployed critical infrastructure across **two Availability Zones** to achieve fault tolerance and minimize the risk of single points of failure.
 
-6. **EC2 Instance:**
+7. **EC2 Instance:**
    - Launched an **EC2 instance** in a public subnet, used for **importing data into AWS RDS** during the deployment process.
 
-7. **Docker & ECR:**
+8. **Docker & ECR:**
    - Built the application as a **Docker image** and pushed it to **Amazon Elastic Container Registry (ECR)** to facilitate container-based deployment.
 
-8. **AWS ECS Fargate:**
+9. **AWS ECS Fargate:**
    - Used **AWS ECS with Fargate** to run and manage the containerized application in a **serverless** environment, simplifying infrastructure management and scaling.
 
-9. **AWS RDS:**
+10. **AWS RDS:**
    - Implemented **Amazon RDS** to manage a **relational database** backend, ensuring data integrity, security, and automated maintenance for end-user data.
 
-10. **Maven:**
+11. **Maven:**
     - Maven served as the primary build tool, handling the compilation, dependency management, and packaging of the Java application.
 
-11. **AWS ELB:**
+12. **AWS ELB:**
     - To efficiently manage network traffic, I deployed AWS Elastic Load Balancer to evenly distribute incoming requests across multiple targets spanning multiple Availability Zones.
