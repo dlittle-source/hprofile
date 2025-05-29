@@ -1,4 +1,4 @@
-![Alt text](image.png)
+![Alt text](GitHub_Actions.png)
 
 **Project: CI/CD Workflow with GitHub Actions**
 
